@@ -11,5 +11,6 @@ return {
   },
   config = function()
     require('neo-tree').setup {}
+    vim.keymap.set('n', '<leader>e', '<Cmd>Neotree toggle<CR>', { desc = '[N]eotree [T]oggle' })
   end,
 }
