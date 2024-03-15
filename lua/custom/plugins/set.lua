@@ -7,13 +7,10 @@ vim.opt.wrap = false
 
 vim.opt.termguicolors = true
 
-vim.opt.foldmethod = 'expr'
-vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.fillchars = { fold = ' ' }
+vim.opt.foldmethod = 'indent'
 vim.opt.foldenable = false
-vim.opt.foldcolumn = '0'
-vim.opt.foldtext = ''
 vim.opt.foldlevel = 99
-vim.opt.foldlevelstart = 1
-vim.opt.foldnestmax = 4
+vim.g.markdown_folding = 1 -- enable markdown folding
 
 return {}
