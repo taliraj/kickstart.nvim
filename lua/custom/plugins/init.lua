@@ -15,7 +15,6 @@ return {
     end,
   },
   { 'MattesGroeger/vim-bookmarks' },
-  { 'dyng/ctrlsf.vim' },
   { 'sainnhe/sonokai' },
   { 'rebelot/kanagawa.nvim' },
 }
