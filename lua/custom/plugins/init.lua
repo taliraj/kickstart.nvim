@@ -17,4 +17,18 @@ return {
   { 'MattesGroeger/vim-bookmarks' },
   { 'sainnhe/sonokai' },
   { 'rebelot/kanagawa.nvim' },
+  {
+    'kdheepak/lazygit.nvim',
+    cmd = {
+      'LazyGit',
+      'LazyGitConfig',
+      'LazyGitCurrentFile',
+      'LazyGitFilter',
+      'LazyGitFilterCurrentFile',
+    },
+    -- optional for floating window border decoration
+    dependencies = {
+      'nvim-lua/plenary.nvim',
+    },
+  },
 }
