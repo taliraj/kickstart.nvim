@@ -17,6 +17,7 @@ return {
   { 'MattesGroeger/vim-bookmarks' },
   { 'sainnhe/sonokai' },
   { 'rebelot/kanagawa.nvim' },
+  { 'rose-pine/neovim' },
   {
     'kdheepak/lazygit.nvim',
     cmd = {
