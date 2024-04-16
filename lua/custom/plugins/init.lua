@@ -18,19 +18,5 @@ return {
   { 'sainnhe/sonokai' },
   { 'rebelot/kanagawa.nvim' },
   { 'rose-pine/neovim' },
-  {
-    'kdheepak/lazygit.nvim',
-    cmd = {
-      'LazyGit',
-      'LazyGitConfig',
-      'LazyGitCurrentFile',
-      'LazyGitFilter',
-      'LazyGitFilterCurrentFile',
-    },
-    -- optional for floating window border decoration
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-    },
-  },
   { 'github/copilot.vim' },
 }
