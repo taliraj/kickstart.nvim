@@ -68,12 +68,30 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.wrap = false
+vim.opt.termguicolors = true
+vim.opt.fillchars = { fold = ' ' }
+vim.opt.foldmethod = 'indent'
+vim.opt.foldenable = false
+vim.opt.foldlevel = 99
+vim.g.markdown_folding = 1 -- enable markdown folding
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+
+vim.keymap.set('n', '<leader>e', vim.cmd.Ex, { desc = 'Explorer' })
+vim.keymap.set('i', 'jj', '<Esc>')
+vim.keymap.set('n', '<leader>gg', ':LazyGit<CR>', { desc = '[L]azy[G]it' })
+vim.keymap.set('n', '<leader>c', ':bdelete<CR>', { desc = 'Close Buffer' })
+vim.keymap.set('n', '<leader>w', ':write<CR>', { desc = 'Save' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })
