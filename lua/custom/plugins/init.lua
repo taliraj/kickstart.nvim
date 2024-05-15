@@ -21,4 +21,12 @@ return {
   { 'github/copilot.vim' },
   { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
   { 'echasnovski/mini.nvim', version = false },
+  {
+    'stevearc/oil.nvim',
+    opts = {
+      vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' }),
+      default_file_explorer = false,
+    },
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+  },
 }
